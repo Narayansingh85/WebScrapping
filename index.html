@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <script>
+        function stickyMenu(){
+            var sticky=document.getElementById('sticky');
+            if (window.pageYOffset >220){
+                sticky.classList.add('sticky');
+
+            }
+            else{
+                sticky.classList.remove('sticky');
+            }
+        }
+        window.onscroll=function(){
+            stickyMenu();
+        }
+    </script>
+</head>
+<body>
+    <div class="bg1">
+        <div class="fnt1">Eat fresh</div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu"><li>Home</li></a>
+            <a href="#" class="a-menu"><li>Deals</li></a>
+            <a href="#" class="a-menu"><li>Vegetables</li></a>
+            <a href="#" class="a-menu"><li>Fruits</li></a>
+            <a href="#" class="a-menu"><li>Meat</li></a>
+            <a href="#" class="a-menu"><li>Carts</li></a>
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="search..." name="search" class="search-input">
+                <button type="submit" class="button"><i class="fa fa-search"></i></button>
+            </form>
+    
+        </div>
+    </div>
+
+<!-- Home Page Begins -->
+    <div class="container">
+        <a href="#vegetables">
+            <div class="categories">
+                <img src="img/vegetables.jpg" class="item-image">
+                <div class="image-title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#fruits">
+            <div class="categories">
+                <img src="img/fruits.jpeg" class="item-image">
+                <div class="image-title">Fruits</div>
+            </div>
+        </a>
+        <a href="#meat">
+            <div class="categories">
+                <img src="img/meat.jpg" class="item-image">
+                <div class="image-title">Meat</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="img/cart.jpg" class="item-image">
+                <div class="image-title">Deals</div>
+            </div>
+        </a>
+
+
+    </div>
+    
+    <!-- Deal Begins here -->
+        <div class="deals-container" id="deals">
+            <div class="bg1">
+                <div class="title">Deals</div>
+            </div>
+                <div class="deal">
+                    Save 20% on VegEtables
+                    <Button class="coupan-button"> Add Coupan </button>
+                </div>
+                <div class="deal">
+                    Save 10% on Fruits
+                    <button class="coupan-button"> Add Coupan </button>
+                </div>
+                <div class="deal">
+                    Save 0.001% on Meat
+                    <button class="coupan-button"> Add Coupan </button>
+                </div>  
+        </div>
+    <!-- Deal Ends here -->
+
+
+    <!-- Veg Begins here -->
+    <div class="deals-container" id="vegetables">
+        <div class="bg1">
+            <div class="title">Vegetables</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/veg/okra.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Organic Okra</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/veg/tomatoes.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Tomatoes</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/veg/greenpepper.webp" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Greenpepper</b><br/>
+                <div class="item-select">
+                    Price : $4.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/veg/onions.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Onion</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Veg Ends here -->
+
+    <!-- Fruits Begins here -->
+    <div class="deals-container" id="fruits">
+        <div class="bg1">
+            <div class="title">Fruits</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/fruits/banana.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Banana</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/fruits/kiwi.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Kiwi</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/fruits/apple.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Apple</b><br/>
+                <div class="item-select">
+                    Price : $4.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/fruits/oranges.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Oranges</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Fruits Ends here -->
+    
+    <!-- Veg Begins here -->
+    <div class="deals-container" id="meat">
+        <div class="bg1">
+            <div class="title">Meat and Sea food</div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/meat/chicken.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Chicken</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/meat/fish.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Fish</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/meat/lamb.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Lamb</b><br/>
+                <div class="item-select">
+                    Price : $4.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="img/meat/prons.webp" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b>Pron</b><br/>
+                <div class="item-select">
+                    Price : $2.99/250grams
+                </div>
+                <label>Qty</label>
+                <select class="item-select">
+                    <option> 250grams</option>
+                    <option> 500grams</option>
+                    <option> 750grams</option>
+                    <option> 1000grams</option>
+                </select>
+                <button class="buynow-btn">Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Veg Ends here -->
+    <!-- Footer starts here -->
+        <div class="bg2">
+            <div class="footer">
+                <div class="quick-links">
+                <div>Locations</div>
+                <ul>
+                    <li>
+                        <a href="" class="a-links">Address1</a>
+                        <a href="" class="a-links">Address2</a>
+                        <a href="" class="a-links">Address3</a>
+
+                    </li>
+                </ul>
+                </div>
+                <div class="quick-links">
+                    <div>Careers</div>
+                    <ul>
+                        <li>
+                            <a href="" class="a-links">Packing Staff</a>
+                            <a href="" class="a-links">Delivery Agents</a>
+                            <a href="" class="a-links">Shelf Fillers</a>
+                        </li>
+                    </ul>
+                    </div>
+                <div class="quick-links">
+                <div>Quick links</div>
+                <ul>
+                    <li>
+                        <a href="" class="a-links">Contact us</a>
+                        <a href="" class="a-links">Faq</a>
+                        <a href="" class="a-links">Help</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="copyrights">
+                <i class="far fa-copyright fa-lx">2020 By Programmers Web Drive</i>
+            </div>
+        </div>
+    <!-- Footer Ends here -->
+    
+<!-- Home Page Ends  -->
+
+</body>
+</html>
